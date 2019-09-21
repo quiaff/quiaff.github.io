@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="manifest" href="/manifest.json">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/estilos.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="nav-wrapper  green darken-4 center">
+                <label class="titulo">&nbsp;&nbsp; Resumen TP1</label>
+            </div>
+        </nav>
+
+        <div class="container center">
+            <div class="row">
+
+                <p>
+                    Optimización de Procesos (Multicore, GPU,
+                    NPU)
+                </p>
+
+                <p> El presente trabajo analiza el desempeño de
+                procesadores multicore, GPU y NPU en dispositivos móviles. Esta
+                arquitectura reúne varias unidades de procesamiento
+                energéticamente eficientes en un solo microprocesador. Sin
+                embargo, para explotar el potencial del conjunto de núcleos las
+                aplicaciones deberán diseñarse bajo el paradigma de
+                computación paralela, asociado a la inclusión de unidades GPU
+                que mejoren el rendimiento del hardware cuando se trabaja con
+                aplicaciones que demandan un procesamiento grafico superior al
+                habitual. Finalmente se desarrollará un apartado sobre NPU,
+                aunque su función es la misma que la de la CPU, este nuevo chip
+                está concebido de forma completamente distinta, como una red
+                neural. Contar con Inteligencia Artificial en una NPU mejorará
+                el rendimiento de cualquier terminal, reducirá el consumo de la
+                batería, otorgará una mayor seguridad y añadirá funciones
+                adicionales a la cámara. Asimismo, podrá aprender de los hábitos
+                de los usuarios y ajustará cualquier parámetro para que el
+                dispositivo esté siempre en estado óptimo de funcionamiento. </p>
+
+                <br />
+
+                <a href="index.html" class="waves-effect waves-light btn green darken-4 ">Volver al inicio</a>
+
+
+            </div>
+        </div>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.collapsible');
+                var instances = M.Collapsible.init(elems, '');
+            });
+            if ('serviceWorker' in navigator)
+                navigator.serviceWorker.register('/sw.js');
+
+        </script>
+    </main>
+    <footer>
+        <div class="footer-copyright  green darken-4">
+            <div class="container">
+                <label class="pie"> Maestr&iacute;a en Tecnolog&iacute;a Inform&aacute;tica</label>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
