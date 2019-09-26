@@ -12,7 +12,8 @@ const recursosEstaticos = [
   'img/vanesa_chica.jpg',
   'img/nayi_chica.jpg',
   'index.html',
-  'tp1.html'
+  'tp1.html',
+  'sw.js'
 ];
 
 self.addEventListener('install', function (event) {
