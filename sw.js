@@ -13,6 +13,7 @@ const recursosEstaticos = [
   'img/nayi_chica.jpg',
   'index.html',
   'tp1.html',
+  'favicon.ico',
   'sw.js'
 ];
 
