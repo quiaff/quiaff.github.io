@@ -1,5 +1,5 @@
 
-const cacheActual = 'Grupo2-v2';
+const cacheActual = 'Grupo2-v1';
 
 const recursosEstaticos = [
   'css/materialize.min.css',
@@ -24,19 +24,6 @@ self.addEventListener('install', function (event) {
           return cache.addAll(recursosEstaticos);
       })
     );
-});
-
-self.addEventListener('activate', function(event) {
-  event.waitUntil(
-    caches.keys().then(function(cacheNames) {
-      return Promise.all(
-        cacheNames.filter(function(cacheName) { return true;
-        }).map(function(cacheName) {
-          return caches.delete(cacheName);
-        })
-      );
-    })
-  );
 });
 
 self.addEventListener('fetch', function (event) {
