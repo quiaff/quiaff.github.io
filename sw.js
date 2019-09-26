@@ -26,6 +26,23 @@ self.addEventListener('install', function (event) {
     );
 });
 
+self.addEventListener('activate', function(e) {
+    console.log('[ServiceWorker] Activate');
+
+    e.waitUntil(
+        caches.keys().then(function(keyList) {
+          return Promise.all(keyList.map(function(key) {
+            if (key !== cacheName) {
+              console.log('[ServiceWorker] Removing old cache', key);
+              return caches.delete(key);
+            }
+          }));
+        })
+    );
+
+    return self.clients.claim();
+});
+
 self.addEventListener('fetch', function (event) {
     event.respondWith(
       caches.match(event.request)
