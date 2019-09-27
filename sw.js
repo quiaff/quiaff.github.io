@@ -10,7 +10,7 @@ const recursosEstaticos = [
   'img/gaby_chica.jpg',
   'img/julian_chica.jpg',
   'img/vanesa_chica.jpg',
-  'img/nayi_chica.jpg',
+  'img/nayi_chica2.jpg',
   'index.html',
   'tp1.html',
   'favicon.ico',
