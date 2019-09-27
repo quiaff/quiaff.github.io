@@ -1,5 +1,5 @@
 
-const cacheActual = 'Grupo2-v2';
+const cacheActual = 'Grupo2-v1';
 
 const recursosEstaticos = [
   'css/materialize.min.css',
