@@ -1,6 +1,6 @@
 {
-  "short_name": "Grupo 2",
-  "name": "Grupo 2 - Aplicaciones moviles",
+  "short_name": "TP Grupo2",
+  "name": "DISPOSITIVOS MOVILES - Grupo 2",
   "background_color": "#B71C1C",
   "icons": [
 	   {
@@ -12,9 +12,8 @@
      	 "src": "icons/512.png",
       	"type": "image/png",
       	"sizes": "512x512"
-    	}	  	
+    	}
   ],
   "start_url": "/index.html",
-  "display": "standalone",
-  "theme_color": "#1B5E20"
+  "display": "standalone"
 }

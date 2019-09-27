@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+	<link rel="manifest" href="/manifest.json">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="css/estilos.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="theme-color" content="#1b5e20">
+    </head>
+
+    <body>
+	<main>
+		  <nav>
+			<div class="nav-wrapper  green darken-4 center">
+				<label class="titulo">&nbsp;&nbsp; Aplicaciones M&oacute;viles Grupo 2</label>
+			</div>
+		  </nav>
+
+		  <div class="container center">
+		        <div class="row">
+
+<ul class="collapsible">
+    <li>
+          <div class="collapsible-header"><label class="tituloItem">Optimización de Procesos (Multicore, GPU, NPU)</label></div>
+          <div class="collapsible-body">
+              <p> El presente trabajo analiza el desempe&ntilde;o de
+              procesadores multicore, GPU y NPU en dispositivos m&oacute;viles. Esta
+              arquitectura re&uacute;ne varias unidades de procesamiento
+              energ&eacute;ticamente eficientes en un solo microprocesador. Sin
+              embargo, para explotar el potencial del conjunto de n&uacute;cleos las
+              aplicaciones deber&aacute;n dise&ntilde;arse bajo el paradigma de
+              computaci&oacute;n paralela, asociado a la inclusi&oacute;n de unidades GPU
+              que mejoren el rendimiento del hardware cuando se trabaja con
+              aplicaciones que demandan un procesamiento grafico superior al
+              habitual. Finalmente se desarrollar&aacute; un apartado sobre NPU,
+              aunque su funci&oacute;n es la misma que la de la CPU, este nuevo chip
+              est&aacute; concebido de forma completamente distinta, como una red
+              neural. Contar con Inteligencia Artificial en una NPU mejorar&aacute;
+              el rendimiento de cualquier terminal, reducir&aacute; el consumo de la
+              bater&iacute;a, otorgar&aacute; una mayor seguridad y a&ntilde;adir&aacute; funciones
+              adicionales a la c&aacute;mara. Asimismo, podr&aacute; aprender de los h&aacute;bitos
+              de los usuarios y ajustar&aacute; cualquier par&aacute;metro para que el
+              dispositivo est&eacute; siempre en estado &oacute;ptimo de funcionamiento. </p>
+
+	  </div>
+
+
+    </li>
+
+  </ul>
+<a href="index.html" target="_blank" class="waves-effect waves-light btn green darken-4 ">Home Page</a>
+
+
+				</div>
+		   </div>
+			<script type="text/javascript" src="js/materialize.min.js"></script>
+	   <script>
+	       document.addEventListener('DOMContentLoaded', function() {
+			var elems = document.querySelectorAll('.collapsible');
+			var instances = M.Collapsible.init(elems, '');
+		});
+	   if ('serviceWorker' in navigator)
+		   navigator.serviceWorker.register('/sw.js');
+
+	  </script>
+    </main>
+	 <footer>
+          <div class="footer-copyright  green darken-4">
+            <div class="container">
+            <label class="pie"> Maestr&iacute;a en Tecnolog&iacute;a Inform&aacute;tica</label>
+            </div>
+          </div>
+        </footer>
+	</body>
+  </html>

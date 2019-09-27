@@ -1,85 +1,88 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="manifest" href="/manifest.json">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="css/estilos.css" media="screen,projection" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
+ <!DOCTYPE html>
+  <html>
+    <head>
+	<link rel="manifest" href="/manifest.json">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="css/estilos.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="theme-color" content="#1b5e20">
+    </head>
 
-<body>
-    <main>
-        <nav>
-            <div class="nav-wrapper  green darken-4 center">
-                <label class="titulo">&nbsp;&nbsp; Grupo 2</label>
-            </div>
-        </nav>
+    <body>
+	<main>
+		  <nav>
+			<div class="nav-wrapper  green darken-4 center">
+				<label class="titulo">&nbsp;&nbsp; Aplicaciones M&oacute;viles Grupo 2</label>
+			</div>
+		  </nav>
 
-        <div class="container center">
-            <div class="row">
+		  <div class="container center">
+		        <div class="row">
 
-                <ul class="collapsible">
-                    <li>
-                        <div class="collapsible-header"><label class="tituloItem">Integrantes Grupo 2</label></div>
-                        <div class="collapsible-body">
-                            <span>
-                                <p>
-                                    <table style="width:100%">
-                                        <tr>
-                                            <th>Nombre</th>
-                                            <th>Foto</th>
-                                            <th>Mail</th>
-                                        </tr>
-                                        <tr>
-                                            <td>Allegro Vanesa</td>
-                                            <td><img src="img/vanesa_chica.jpg" alt="Allegro Vanesa"></td>
-                                            <td><a href="mailto:vanesaallegro@gmail.com">Enviar mail</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Iannantuoni Gabriela</td>
-                                            <td><img src="img/gaby_chica.jpg" alt="Iannantuoni Gabriela"></td>
-                                            <td><a href="mailto:gaby.iannantuoni@gmail.com">Enviar mail</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Olmeda Julian</td>
-                                            <td><img src="img/julian_chica.jpg" alt="Olmeda Julian"></td>
-                                            <td><a href="mailto:julian.olmeda@outlook.com">Enviar mail</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Rojas Nayiby</td>
-                                            <td><img src="img/nayi_chica.jpg" alt="Rojas Nayiby"></td>
-                                            <td><a href="mailto:quiaff@gmail.com">Enviar mail</a></td>
-                                        </tr>
-                                    </table>
-                                </p>
-                            </span>
-                        </div>
-                    </li>
-
-
-                </ul>
-                <a href="tp1.html" class="waves-effect waves-light btn green darken-4 ">Resumen TP1</a>
-
-
-            </div>
+<ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><label class="tituloItem">Integrantes del Grupo 2</label></div>
+      <div class="collapsible-body">
+	  <span>
+      <div class="col s12 m4">
+			<img class="responsive-img" src="imagenes/nayi.jpg">
+      <p>Nayiby Rojas</p>
+        <div class="center">
+        <a href="mailto:quiaff@gmail.com?Subject=Hello" class="waves-effect waves-light btn green darken-1 ">Enviar email</a>
         </div>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var elems = document.querySelectorAll('.collapsible');
-                var instances = M.Collapsible.init(elems, '');
-            });
-            if ('serviceWorker' in navigator)
-                navigator.serviceWorker.register('/sw.js');
+      </div>
 
-        </script>
+      <div class="col s12 m4">
+      <img class="responsive-img" src="imagenes/gaby.jpg"></br>
+      <p>Gabriela Iannantuoni</p>
+        <div class="center">
+        <a href="mailto:gaby.iannantuoni@gmail.com?Subject=Hello" class="waves-effect waves-light btn green darken-1 ">Enviar email</a>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+      <img class="responsive-img" src="imagenes/vane.jpg">
+      <p>Vanesa Allegro</p>
+        <div class="center">
+        <a href="mailto:vanesaallegro@gmail.com?Subject=Hello" class="waves-effect waves-light btn green darken-1 ">Enviar email</a>
+        </div>
+      </div>
+
+      <img class="responsive-img" src="imagenes/juli.jpg">
+      <p>Julian Olmeda</p>
+        <div class="center">
+        <a href="mailto:mailtojulian77@gmail.com?Subject=Hello>" class="waves-effect waves-light btn green darken-1 ">Enviar email</a>
+        </div>
+
+
+	  </span></div>
+
+
+    </li>
+
+  </ul>
+<a href="Trabajos_practicos.html" target="_blank" class="waves-effect waves-light btn green darken-4 ">Trabajos Practicos del Grupo 2</a>
+
+
+				</div>
+		   </div>
+			<script type="text/javascript" src="js/materialize.min.js"></script>
+	   <script>
+	       document.addEventListener('DOMContentLoaded', function() {
+			var elems = document.querySelectorAll('.collapsible');
+			var instances = M.Collapsible.init(elems, '');
+		});
+	   if ('serviceWorker' in navigator)
+		   navigator.serviceWorker.register('/sw.js');
+
+	  </script>
     </main>
-    <footer>
-        <div class="footer-copyright  green darken-4">
+	 <footer>
+          <div class="footer-copyright  green darken-4">
             <div class="container">
-                <!--<label class="pie"> Maestr&iacute;a en Tecnolog&iacute;a Inform&aacute;tica</label>-->
+            <label class="pie"> Maestr&iacute;a en Tecnolog&iacute;a Inform&aacute;tica</label>
             </div>
-        </div>
-    </footer>
-</body>
-</html>
+          </div>
+        </footer>
+	</body>
+  </html>
